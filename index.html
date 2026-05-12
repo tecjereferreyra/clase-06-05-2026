@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Página sobre los Yorkshire Terrier</h1>
+        <h1 class="title">Página sobre los Yorkshire Terrier</h1>
     </header>
 
     <nav class="menu">
@@ -42,8 +42,28 @@
                 <h3>Juanito</h3>
                 <p>La raza Yorki es proveniente de Inglaterra.</p>
             </div>
+
+
+        <div class="tarjeta">
+            <img src="/Imagenes/Frontend.webp" alt="Lenguajes como HTML,CSS y Java Script">
+                    <h2>Cursos destacado</h2>
+                <h3 id="tituloCurso"></h3>
+                <p id="descripcionCurso"></p>
+                <p id="precioCurso"></p>
+                   <p id="estadoCurso"></p>
+            </div>
+
+              <div class="tarjeta">
+                <img src="/Imagenes/Lenguajes.png" alt="Lenguajes">
+                <h2>Datos cargados desde Java Script</h2>
+                <h3 id="NombreProducto"></h3>
+                <p id="descripcionProducto"></p>
+                <p id="precioProducto"></p>
+            </div>
         </div>
     </section>
+
+ 
 
 
     <section>
@@ -52,7 +72,8 @@
             <input type="text" placeholder="Ingrese su nombre">
             <input type="email" placeholder="jeremias@example.com">
             <textarea  rows="5"  placeholder="Escriba un mensaje..."></textarea>
-            <button>Enviar</button>
+            <!-- <button>Enviar</button> -->
+            <button type="button" id="boton">Enviar</button>
         </form>
     </section>
 
@@ -61,5 +82,7 @@
             <p>Todos los derechos reservados - 2026.</p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
