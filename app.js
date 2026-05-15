@@ -1,32 +1,34 @@
-// Actividad 1
+"use strict";
+let curso = "Programación Web";
+let descripcion = "Aprende HTML, CSS  JavaScript";
+let precio = 15000;
+let disponible = true;
+let tituloCurso = document.querySelector("#tituloCurso");
+let descripcionCurso = document.querySelector("#descripcionCurso");
+let precioCurso = document.querySelector("#precioCurso");
+let estadoCurso = document.querySelector("#estadoCurso");
+if (tituloCurso) {
+    tituloCurso.innerHTML = curso;
+}
+if (descripcionCurso) {
+    descripcionCurso.innerHTML = descripcion;
+}
+if (precioCurso) {
+    precioCurso.innerHTML = "Precio: $" + precio;
+}
+if (estadoCurso) {
+    if (disponible) {
+        estadoCurso.innerHTML = "Cupos disponibles";
+    }
+    else {
+        estadoCurso.innerHTML = "Curso completo";
+    }
+}
 alert("Bienvenidos");
 console.log("Hola");
-
-document.querySelector('.title').innerHTML = "Hola a todos.";
-// Actividad 2
-document.querySelector("#boton").onclick = function(){
-document.body.style.backgroundColor = "lightblue";
+let boton = document.querySelector("#boton");
+if (boton) {
+    boton.onclick = function () {
+        document.body.style.background = "lightblue";
+    };
 }
-//Actividad 3
-let nombre = "Curso de Programación Web";
-let descripcion = "Aprendemos HTML, CSS y JavaScript";
-let precio = 9000;
-
-
-document.getElementById("NombreProducto").innerHTML = nombre;
-document.getElementById("descripcionProducto").innerHTML = descripcion;
-document.getElementById("precioProducto").innerHTML = "El precio es: $"+precio;
-
-//Actividad 4
-
-
-let tituloCurso = "Curso de Frontend";
-let descripcionCurso = "Aprendemos HTML, CSS, JavaScript y React";
-let precioCurso = 15000;
-let estadoCurso = "Disponible";
-
-document.getElementById("tituloCurso").innerHTML = tituloCurso;
-document.getElementById("descripcionCurso").innerHTML = descripcionCurso;
-document.getElementById("precioCurso").innerHTML = "El precio es: $"+precioCurso;
-document.getElementById("estadoCurso").innerHTML = estadoCurso;
-
